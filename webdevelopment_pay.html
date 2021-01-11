@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Course Payment</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Computer Training Company">
+    <meta name="keywords" content="Computer, Training, Web Development, html, ICT, Excel, Microsoft Word, Graphics">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color: powderblue;">
+  
+ 
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+  
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto w-25">
+            
+          </div>
+        </header>
+
+        <br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+        <h2 class="bookheading">LEARN & MASTER WEB DEVELOPMENT</h2>
+    
+    <h4 class="bookSubHeadings">Course Outline</h4>
+      <ul class="bookHighlights">
+        <li>Hyper Text Markup Language (HTML) - Structure of a Website</li>
+        <li>Cascading Style Sheets (CSS) - Adds beauty to a Website</li>
+        <li>BOOTSTRAP - Makes a Website fit to all kinds of screens</li>
+        <li>JAVASCRIPT - Makes a website more interactive</li>
+        <li>HOSTING - Website goes live on the internet and can be viewed globaly</li><br>
+      </ul>
+
+        <h5 class="bookheading">This Web Development Master Course costs N10,000 only. You can pay online or through the Bank as shown below.</h5>
+
+      <div class="row">
+        <div class="col-md-6">
+<!--<div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">-->
+  <div data-aos="fade-up" data-aos-delay="500">
+      <center>
+      <p style="color: rgb(12, 12, 155); font-weight: bold; padding: 7% 7% 7%;" >
+     Pay Online so you can be redirected to the Lesson Area in seconds.</p>
+ 
+      <!--Pay Stack Code Begins-->
+    <form>
+        <script src="https://js.paystack.co/v1/inline.js"></script>
+        <button type="button" onclick="payWithPaystack()" class="btn btn-primary">Pay Online</button>
+      </form>
+      
+<!-- place below the html form -->
+<script>
+  function payWithPaystack(){
+    var handler = PaystackPop.setup({
+      key: 'pk_live_0175a7d702a37fc14b2838bedd15c7c894d6dc98',
+      email: 'support@computerskills.com.ng',
+      amount: 1000000,
+      ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+      metadata: {
+         custom_fields: [
+            {
+                display_name: "Mobile Number",
+                variable_name: "mobile_number",
+                value: "+2348012345678"
+            }
+         ]
+      },
+      callback: function(response){
+          alert('success. transaction ref is ' + response.reference);
+      },
+      onClose: function(){
+          alert('window closed');
+      }
+    });
+    handler.openIframe();
+  }
+</script>
+<!--Pay Stack Code Ends-->
+    </center>
+    </div>
+  </div>
+<div class="col-md-6">
+  <div data-aos="fade-up" data-aos-delay="500">
+    <center>
+    <p style="color: rgb(12, 12, 155); font-weight: bold; padding: 7% 7% 7%;" >
+    Pay through bank and submit your proof of payment for verification.</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+      Bank Payment
+    </button>
+  </center>
+  </div>
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="font-weight: bold;">BANK ACCOUNT DETAILS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div> 
+      <div class="modal-body" style="font-weight: bold; font-size: larger;">
+        Account No: 1015842827<br>
+        Account Name: Candour Best Computers<br>
+        Bank Name: Zenith Bank &nbsp; <img src="images/zenith_bank.jpg" width="40px" height="30px"><br>
+        Amount: N10,000
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="https://wa.me/2348092649008"> <button type="button" class="btn btn-primary">Submit Proof of Payment</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="https://www.computerskills.com.ng"><span style="font-size: smaller; float: right;">Back</span></a>
+</div><hr>
+  </div>
+</div>
+  <div class="col-md-1">
+
+  </div>
+</div>
+
+    </header>
+
+    
+
+  
+    
+  </div> <!-- .site-wrap -->
+
+ 
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
